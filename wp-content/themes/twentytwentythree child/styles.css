@@ -1,0 +1,35 @@
+/*
+Theme Name:   Twenty Twenty Three Child
+Author:       Hostpro
+Template:     twentytwentythree
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+br {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 740px;
+    height: 470px;
+
+    background-color: #E5E5E5;
+}
+
+.step-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Авто висота для заголовку, решта займає вільний простір */
+    height: 100%; /* Дозволяє заповнити контейнер */
+}
+
+
+@media (max-width: 576px) {
+    .wizard-step {
+        min-height: unset;
+    }
+}
+
